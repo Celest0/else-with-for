@@ -7,3 +7,14 @@ You are given a program that takes all 3 passengers' ages as inputs and inserts 
 If the age requirement is satisfied, the program outputs "Get ready!".
 
 
+ages = []
+i = 0
+while i<3:
+   age = int(input())
+   ages.append(age)
+   if min(ages)<16:
+    print("Too young!")
+    break
+   i+=1
+else:
+    print("Get ready!")
